@@ -1,0 +1,38 @@
+{
+	"name": "rubber-duck-bot",
+	"version": "0.9.0",
+	"description": "Telegram Rubber Duck Bot",
+	"private": true,
+	"scripts": {
+		"dev": "nodemon",
+		"start": "node lib/index.js",
+		"lint": "eslint .",
+		"fix": "npm run lint -- --fix",
+		"precommit": "npm run lint",
+		"release": "git push --force-with-lease heroku master",
+		"logs": "heroku logs -p web -t"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/flesler/rubber-duck-bot.git"
+	},
+	"main": "./lib/index.js",
+	"author": "Ariel Flesler <aflesler@gmail.com>",
+	"dependencies": {
+		"knex": "0.14.3",
+		"pg": "^7.3.0",
+		"telegraf": "^3.12.1",
+		"winston": "^2.3.1"
+	},
+	"devDependencies": {
+		"eslint": "^4.10.0",
+		"eslint-config-airbnb-base": "^12.1.0",
+		"eslint-plugin-import": "^2.8.0",
+		"github-changes": "1.1.2",
+		"husky": "^0.14.3",
+		"nodemon": "^1.9.1"
+	},
+	"engines": {
+		"node": "^8.0.0"
+	}
+}

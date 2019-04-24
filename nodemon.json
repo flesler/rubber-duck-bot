@@ -1,0 +1,15 @@
+{
+	"ignore": [
+		".git",
+		"node_modules/**/node_modules"
+	],
+	"execMap": {
+		"js": "node"
+	},
+	"watch": [
+		"lib/",
+		"config/",
+		"bin/"
+	],
+	"ext": "js json"
+}
