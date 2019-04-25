@@ -1,6 +1,6 @@
 {
 	"#": {
-		"answers": {
+		"options": {
 			"/start": "#start",
 			"/help": "#start",
 			"Hi": "#start",
@@ -10,42 +10,63 @@
 		"default": "#start"
 	},
 	"#start": {
-		"reply": "Quack! How can I help you today?",
-		"answers": {
+		"replies": [
+			"Quack! How can I help you today?",
+			"Hey there! How can I be of aid?",
+			"Hello! What can I do for you today?"
+		],
+		"options": {
 			"I need help with my code": "#code-start",
 			"I have a problem": "#situation"
 		},
 		"default": "#situation"
 	},
 	"#code-start": {
-		"reply": "My specialty! Paste all the relevant code here. Don't worry about indentation and formatting, I've seen all sorts of bad code",
+		"replies": [
+			"My specialty! Paste all the relevant code here. Don't worry about indentation and formatting, I've seen all sorts of bad code"
+		],
 		"default": "#code-more"
 	},
 	"#code-more": {
-		"reply": "Well, I've seen worse. Any more code I should see? If so paste it too",
-		"answers": {
+		"replies": [
+			"Well, I've seen worse. Any more code I should see? If so paste it too",
+			"Beautiful, got more?"
+		],
+		"options": {
 			"No, that's all the code": "#situation"
 		},
 		"default": "#code-more"
 	},
 	"#situation": {
-		"reply": "Ok, please explain to me what it is that you are trying to achieve. Remember I don't know anything about it.\n\nIf you'd rather send voice messages, I'm perfectly capable of understanding them too",
+		"replies": [
+			"Ok, please explain to me what it is that you are trying to achieve. Remember I don't know anything about it.\n\nIf you'd rather send voice messages, I'm perfectly capable of understanding them too"
+		],
 		"default": "#situation-more"
 	},
 	"#situation-more": {
-		"reply": "I see, Anything else?",
-		"answers": {
+		"replies": [
+			"I see, Anything else?",
+			"Ok, what else?",
+			"And?"
+		],
+		"options": {
 			"No, that's basically it": "#problem"
 		},
 		"default": "#situation-more"
 	},
 	"#problem": {
-		"reply": "I think I get it, now explain to me the problem you are having. Feel free to get very technical, but remember I'm not familiar with the specific situation",
+		"replies": [
+			"I think I get it, now explain to me the problem you are having. Feel free to get very technical, but remember I'm not familiar with the specific situation"
+		],
 		"default": "#problem-more"
 	},
 	"#problem-more": {
-		"reply": "Right, keep going",
-		"answers": {
+		"replies": [
+			"Right, keep going",
+			"What else can you tell me about it?",
+			"Alright, and..."
+		],
+		"options": {
 			"What are your thoughts so far?": "#thoughts",
 			"I figured it out!": "#solved",
 			"I'll continue later": "#later"
@@ -53,30 +74,42 @@
 		"default": "#problem-more"
 	},
 	"#thoughts": {
-		"reply": "I think we are getting there, what do you think?",
+		"replies": [
+			"I think we are getting there, what do you think?"
+		],
 		"default": "#thoughts-end"
 	},
 	"#thoughts-end": {
-		"reply": "I totally agree, what else can you tell me?",
+		"replies": [
+			"I totally agree, what else can you tell me?"
+		],
 		"default": "#problem-more"
 	},
 	"#later": {
-		"reply": "Sure no problem, I'll be here... quacking",
-		"answers": {
+		"replies": [
+			"Sure no problem, I'll be here... quacking"
+		],
+		"options": {
 			"Ok I'm back": "#back"
 		},
 		"default": "#back"
 	},
 	"#back": {
-		"reply": "Great! So you were telling me about the problem you are having. What else can you tell me?",
+		"replies": [
+			"Great! So you were telling me about the problem you are having. What else can you tell me?"
+		],
 		"default": "#problem-more"
 	},
 	"#solved": {
-		"reply": "Yes! Now I'm curious, can you explain me what was the solution?",
+		"replies": [
+			"Yes! Now I'm curious, can you explain me what was the solution?"
+		],
 		"default": "#solved-end"
 	},
 	"#solved-end": {
-		"reply": "D'oh! I'm glad we figured it out, I do think my expertise in the matter played a big role in this, to be honest",
+		"replies": [
+			"D'oh! I'm glad we figured it out, I do think my expertise in the matter played a big role in this, to be honest"
+		],
 		"default": "#start"
 	}
 }
