@@ -1,5 +1,8 @@
 ## Change Log
 
+### v1.2.1 2019-04-26 19:13
+- [aa187bd](https://github.com/flesler/rubber-duck-bot/commit/aa187bd0abb3ef3aec9b6e3163460da7428b851f) Disabling webhookReply to fix webhooks (@flesler)
+
 ### v1.2.0 2019-04-26 18:36
 - [c101631](https://github.com/flesler/rubber-duck-bot/commit/c101631f605cf2a7535fa31e5bc1d01fe7c509e7) Log what users say (@flesler)
 - [c34df87](https://github.com/flesler/rubber-duck-bot/commit/c34df8790e82aea9707ae631f7854ce6078dde88) The production version is now webhook-based instead of polling (@flesler)

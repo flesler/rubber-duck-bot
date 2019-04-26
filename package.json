@@ -1,6 +1,6 @@
 {
 	"name": "rubber-duck-bot",
-	"version": "1.2.0",
+	"version": "1.2.1",
 	"description": "Telegram Rubber Duck Bot",
 	"private": true,
 	"scripts": {
