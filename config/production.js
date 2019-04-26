@@ -3,6 +3,7 @@ const { env } = process
 module.exports = {
 	http: {
 		port: number(env.PORT),
+		host: string(env.HOST),
 	},
 	log: {
 		level: string(env.LOG_LEVEL, 'info'),

@@ -1,6 +1,7 @@
 module.exports = {
 	http: {
 		port: 0,
+		host: null,
 	},
 	log: {
 		level: 'debug',
